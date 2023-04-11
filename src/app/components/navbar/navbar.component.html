@@ -1,0 +1,12 @@
+<nav class="main-menu">
+  <img [src]="logoSrc" alt="logo" class="nav-logo" />
+  <ul class="menu-items">
+    <li
+      class="menu-item"
+      *ngFor="let item of itemsList"
+      [ngClass]="item === 'Log in' ? 'menu-link' : ''"
+    >
+      {{ item }}
+    </li>
+  </ul>
+</nav>

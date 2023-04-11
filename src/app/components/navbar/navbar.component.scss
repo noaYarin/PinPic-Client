@@ -1,0 +1,43 @@
+@use "../../../styles/variables" as variables;
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+
+  .nav-logo {
+    width: 8%;
+    background-color: variables.$purple;
+    border-radius: 50%;
+  }
+
+  .menu-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menu-item {
+      margin: 8px;
+      padding: 8px;
+      font-size: variables.$fz;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    .menu-link {
+      padding: 15px;
+      border-radius: 50%;
+      background-color: variables.$pink;
+
+      &:hover {
+        color: variables.$white;
+        text-decoration: none;
+        opacity: 0.83;
+      }
+    }
+  }
+}
